@@ -1,0 +1,81 @@
+<!-- TODO (APP team): add validation logic for inputs as needed -->
+<!-- NOTE: validation functions can be added here or in the page template (index.html) -->
+
+<!-- ######### scripts ######### -->
+<script>
+  function validateIfNotEmpty(a, e, t) {
+    return !e || "" != a.value;
+  }
+</script>
+
+<div class="ulp-field" id="id-gender-select-menu-container">
+  <fieldset>
+    <span class="formFieldsLable">Sexe</span>
+    <div id="gender">
+      <label class="form__field radio-button__wrapper" for="female" tabindex="0">
+        <input type="radio" id="female" name="ulp-gender" value="F" required />
+        <span class="radio-button__title">Femme</span>
+        <span class="radio-button__item"></span>
+      </label>
+      <br />
+      <label class="form__field radio-button__wrapper" for="male" tabindex="0">
+        <input type="radio" id="male" name="ulp-gender" value="M" />
+        <span class="radio-button__title">Homme</span>
+        <span class="radio-button__item"></span>
+      </label>
+      <br />
+
+      <label class="form__field radio-button__wrapper" for="prefer-not-to-say" tabindex="0">
+        <input type="radio" id="prefer-not-to-say" name="ulp-gender" value="O" />
+        <span class="radio-button__title">Autre</span>
+        <span class="radio-button__item"></span>
+      </label>
+    </div>
+  </fieldset>
+  <div class="ulp-error-info" id="id-error-gender-select-container" data-ulp-validation-function="validateIfNotEmpty"
+    data-ulp-validation-event-listeners="blur,change,input,focus">
+    Failed
+  </div>
+</div>
+
+
+<div class="ulp-field " id="id-first-name-container">
+  <span for="firstName" class="formFieldsLable">firstName</span>
+  <input class="ulp-first-name-input" type="text" name="ulp-first-name" id="firstName" placeholder="Ex. Marie"
+    required />
+  <div class="ulp-error-info" id="id-error-first-name-container" data-ulp-validation-function="validateIfNotEmpty"
+    data-ulp-validation-event-listeners="blur,change,input,focus">
+    failed
+  </div>
+</div>
+
+<div class="ulp-field ulp-last-name-container" id="id-last-name-container">
+  <span class="ulp-last-name-label formFieldsLable" for="lastName" >lastName</span>
+  <input class="ulp-last-name-input" type="text" name="ulp-last-name" id="lastName" placeholder="Nom" required />
+  <div class="ulp-error-info" id="id-error-last-name-container" data-ulp-validation-function="validateIfNotEmpty"
+    data-ulp-validation-event-listeners="blur,change,input,focus">
+    Failed
+  </div>
+</div>
+<div class="ulp-field ulp-birthday-container" id="id-birthday-container"> 
+  <span class="birthday__label formFieldsLable" for="birthday">birthday</span>
+   <input class="ulp-birthday-input form__field form__text" type="date" name="ulp-birth-date" id="birthday"
+    placeholder="13/04/2024" required />
+  <span class="birthday__icon-wrapper">
+    <svg preserveAspectRatio="xMidYMid meet" focusable="false" viewBox="0 0 64 64" class="birthday__icon">
+      <path
+        d="M56.267 4.98H46.099v-.993A1.99 1.99 0 0044.095 2c-1.075 0-2.004.851-2.004 1.987v.993H22.399v-.993A1.99 1.99 0 0020.395 2c-1.075 0-2.004.851-2.004 1.987v.993H7.865C6.218 4.98 5 6.116 5 7.82v49.912C5 59.294 6.145 60.5 7.865 60.5H56.13c1.647 0 2.865-1.208 2.865-2.768V19.038l-.007-11.22c.143-1.56-1.075-2.838-2.722-2.838zM9.076 8.884h9.453v.994a1.99 1.99 0 002.004 1.987c1.075 0 2.004-.852 2.004-1.987v-.994h19.692v.994a1.99 1.99 0 002.004 1.987c1.075 0 2.004-.852 2.004-1.987v-.994h9.023v8.165H9.215l.005-8.165h-.144zm46.116 47.64H9.147V20.953h46.045v35.571zm-38.239-26.34h5.944v5.892h-5.944v-5.893zm12.245 0h5.944v5.892h-5.944v-5.893zm12.246 0h5.944v5.892h-5.944v-5.893zm-24.49 11.5h5.943v5.894h-5.944v-5.893zm12.244 0h5.944v5.894h-5.944v-5.893zm12.246 0h5.944v5.894h-5.944v-5.893z">
+      </path>
+    </svg>
+  </span>
+  <div class="ulp-error-info" id="id-error-birthday-container" data-ulp-validation-function="validateIfNotEmpty"
+    data-ulp-validation-event-listeners="blur,change,input,focus">
+    Failed
+  </div>
+</div>
+
+<div class="ulp-field" id="id-email-info-container">
+  <p class="formFieldsLable email-info-text">
+    Email validate
+  </p>
+</div>
