@@ -1,4 +1,3 @@
-
 ---
 description: Review pull requests for defects and cross-file impacts
 on:

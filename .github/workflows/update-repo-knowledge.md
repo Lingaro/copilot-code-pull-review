@@ -1,4 +1,3 @@
-
 ---
 description: Update repository knowledge after merged code changes
 on:
