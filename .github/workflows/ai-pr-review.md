@@ -10,7 +10,7 @@ permissions:
   copilot-requests: write
 
 engine: copilot
-max-turns: 30
+max-turns: 60
 timeout-minutes: 20
 
 safe-outputs:
