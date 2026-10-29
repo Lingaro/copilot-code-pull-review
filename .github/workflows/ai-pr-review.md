@@ -1,4 +1,3 @@
-
 ---
 description: Review pull requests for defects and cross-file impacts
 on:
@@ -8,6 +7,7 @@ on:
 permissions:
   contents: read
   pull-requests: read
+  copilot-requests: write
 
 engine: copilot
 max-turns: 15

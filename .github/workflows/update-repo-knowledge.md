@@ -1,4 +1,3 @@
-
 ---
 description: Update repository knowledge after merged code changes
 on:
@@ -16,6 +15,7 @@ on:
       - 'pom.xml'
 permissions:
   contents: read
+  pull-requests: read
   copilot-requests: write
 engine: copilot
 max-turns: 15
