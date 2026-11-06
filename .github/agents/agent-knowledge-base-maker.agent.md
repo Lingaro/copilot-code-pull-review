@@ -31,6 +31,7 @@ Store knowledge in `repo-knowledge/` using these four standard files:
 5. Keep each fact in one primary location. Reference the relevant file or section instead of duplicating information.
 6. Keep documentation concise, actionable, and useful for PR impact analysis.
 7. Do not create additional knowledge files unless important information cannot reasonably fit into the four standard files. If an additional file is necessary, explain why and update `index.md`.
+8. Stamp each knowledge file with a `Last verified` line that gives the date and the commit SHA it was checked against. Update the stamp whenever the file's content is verified.
 
 ## Commands
 
