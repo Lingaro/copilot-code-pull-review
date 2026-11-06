@@ -12,8 +12,8 @@ permissions:
   pull-requests: read
   copilot-requests: write
 engine: copilot
-max-turns: 15
-timeout-minutes: 20
+max-turns: 30
+timeout-minutes: 30
 tools:
   edit:
   bash:
