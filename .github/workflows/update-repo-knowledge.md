@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "repo-knowledge/**"
+      - "**/*.md"
 permissions:
   contents: read
   pull-requests: read
@@ -65,7 +68,7 @@ This workflow must work across repository types, programming languages, framewor
 
 12. Do not install dependencies, deploy applications, change branches, stage or commit changes, or expose secrets. Never merge a generated PR automatically.
 
-13. If no knowledge changes are necessary, do not create a PR.
+13. If no knowledge changes are necessary, do not create a PR. Call the `noop` safe output with a one-line reason (for example, "push only changed tests") and stop.
 
 14. If knowledge files change, create at most one draft PR with the title `Update repository knowledge`. The configured title prefix will add `[knowledge]` automatically.
 
